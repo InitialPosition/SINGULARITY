@@ -62,4 +62,5 @@ if (global.carryPointer != -1) {
 	instance_create_layer(x, y, "Instances", obj_warpPointer)
 }
 
+fuel = 100;
 okToDestroy = 0;

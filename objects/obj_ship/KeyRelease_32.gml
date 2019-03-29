@@ -28,7 +28,11 @@ if (inPlanetProximity) {
 			speed = 0;
 		}
 		
-		global.planetsVisited++;
+		var nearestPlanet = instance_nearest(x, y, obj_planet);
+		if (!nearestPlanet.visited) {
+			nearestPlanet.visited = 1;
+			global.planetsVisited++;
+		}
 		
 		speed = 0;
 		instance_create_layer(0, 0, "PlanetOverlay", obj_shop);

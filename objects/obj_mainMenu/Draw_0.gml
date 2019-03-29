@@ -12,4 +12,4 @@ draw_text_color(room_width / 2, 800, option[4], c_white, c_white, c_white, c_whi
 draw_set_halign(fa_right);
 draw_set_font(fnt_mainGameSmall);
 
-draw_text_color(room_width - 60, room_height - 60, "v. 1 . 2 . 1", c_white, c_white, c_white, c_white, 1);
+draw_text_color(room_width - 60, room_height - 60, "v. 0 . 1 . 2 . 2 beta", c_white, c_white, c_white, c_white, 1);

@@ -40,6 +40,10 @@ if (global.fuel > 0) {
 	if (keyboard_check(accelerate)) {
 		direction = image_angle;
 	}
+} else {
+	if (speed == 0) {
+		instance_destroy();
+	}
 }
 
 // 2 pi clock
@@ -92,10 +96,11 @@ if (x > room_width + 100 ||
 	y > room_height + 100 ||
 	y < -100) {
 		global.hp -= 0.1;
+		
 		if (global.fuel <= 0) {
 			global.hp = 0;
 		}
-	}
+}
 	
 // die from hp
 if (global.hp <= 0) {

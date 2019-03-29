@@ -13,6 +13,8 @@ hasAntenna = choose(0, 1);
 
 ringAlignment = irandom_range(-10, 10);
 
+visited = 0;
+
 sprite_index = spr_planet_base;
 image_xscale = planetScale;
 image_yscale = image_xscale;
