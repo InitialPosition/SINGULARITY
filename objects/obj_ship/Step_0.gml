@@ -41,7 +41,7 @@ if (global.fuel > 0) {
 		direction = image_angle;
 	}
 } else {
-	if (speed == 0) {
+	if (speed == 0 && !global.paused) {
 		instance_destroy();
 	}
 }
