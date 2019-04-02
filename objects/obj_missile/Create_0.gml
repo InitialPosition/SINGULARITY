@@ -1,7 +1,7 @@
 /// @description Set up missile
 
-maxSpeed = 0.9;
-maxFlySpeed = random_range(8, 10);
+maxSpeed = random_range(0.4, 1);
+maxFlySpeed = random_range(10, 12);
 target = obj_ship;
 
 notSlowed = 1;
@@ -13,7 +13,12 @@ part_emitter_region(missileExhaustPart, missileExhaustPartEmit, x + lengthdir_x(
 part_emitter_stream(missileExhaustPart, missileExhaustPartEmit, global.part_missile_exhaust, 2);
 
 savedSpeed = 0;
-hasFuel = 1;
-rotDelta = 0;
+
+blinkTimer = room_speed * 12;
+blinkStarted = 0;
+savedBlink = 0;
 
 deathTimer = room_speed * 15;
+
+createExplosion = 1;
+blinkSpeed = 8;

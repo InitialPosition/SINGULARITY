@@ -1,7 +1,21 @@
 /// @description Set up graphics
 
+sprite_index = spr_planet_base;
+
+image_xscale = 20;
+image_yscale = 20;
+
+while (place_meeting(x, y, obj_planet)) {
+	x = irandom_range(1000, room_width - 1000);
+	y = irandom_range(1000, room_height - 1000);
+}
+
 planetScale = irandom_range(7, 10);
-planetColor = make_color_hsv(irandom(255), 255, 255);
+
+var randColor = irandom(255);
+planetColor = make_color_hsv(randColor, 180, 255);
+cloudColor = make_color_hsv(randColor, 140, 255);
+ringColor = make_color_hsv(randColor, 200, 255);
 
 hasRing = choose(0, 1);
 hasClouds = choose(0, 1);
@@ -15,7 +29,6 @@ ringAlignment = irandom_range(-10, 10);
 
 visited = 0;
 
-sprite_index = spr_planet_base;
 image_xscale = planetScale;
 image_yscale = image_xscale;
 

@@ -14,11 +14,9 @@ if (!selected) {
 		case 0:
 			global.storyMode = 1;
 		case 1:	
-			audio_stop_all();
-			audio_play_sound(snd_startGame, 1, 0);
+			scr_saveSeed(0);
 			
-			var fade = instance_create_layer(0, 0, "Fade", obj_fade);
-			fade.target = rm_intro;
+			room_goto(rm_gameOptions);
 			break;
 		case 2:
 			room_goto(rm_tutorial);
@@ -27,13 +25,6 @@ if (!selected) {
 			room_goto(rm_options);
 			break;
 		case 4:
-			if (file_exists(working_directory + "save.sdf")) {
-				file_delete(working_directory + "save.sdf");
-			}
-			if (file_exists(working_directory + "world.sdf")) {
-				file_delete(working_directory + "world.sdf");
-			}
-	
 			game_end();
 			break;
 	}

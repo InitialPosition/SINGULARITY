@@ -1,18 +1,28 @@
 {
-    "id": "069c7e47-5dde-4922-97d1-10db71fd84e2",
+    "id": "ee78decb-5682-4f5f-8a2f-e15a67f81747",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_planetGenerator",
+    "name": "obj_gameOptions",
     "eventList": [
         {
-            "id": "bdd06ed3-876d-4f3b-b975-c3854eed610e",
+            "id": "59de0d72-708f-45f3-b20b-047d4a1b169c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "069c7e47-5dde-4922-97d1-10db71fd84e2"
+            "m_owner": "ee78decb-5682-4f5f-8a2f-e15a67f81747"
+        },
+        {
+            "id": "6242fea1-214f-4c39-8785-f3160d9b1947",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "ee78decb-5682-4f5f-8a2f-e15a67f81747"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

@@ -1,3 +1,5 @@
 /// @description Disable timed shake
 
-shake = 0;
+if (!keyboard_check(vk_shift)) {
+	shake = 0;
+}

@@ -6,7 +6,7 @@ SINGULARITY was initially written for the Ludum Dare 42 competition. The origina
 ## Download
 If you just want to play the game, you can find the download section [here](https://github.com/Syrapt0r/SINGULARITY/releases).
 
-If you want to help me, feel free to create pull requests. Please specify your changes, this will increase the chance of your PR being accepted.
+If you want to help me, feel free to create pull requests. Please specify your changes, this will increase the chance of your PR being accepted. Don't forget to include your name in the CREDITS.txt.
 
 ## Overwiew
 SINGULARITY is a space exploration rogue-like where you visit universes to find gold, explore planets and avoid dangerous hazards. Will you be able to escape the singularity?

@@ -1,7 +1,7 @@
 /// @description Setup
 
 title = "ENTERING";
-rand = "UNIVERSE " + string(random_get_seed());
+rand = "UNIVERSE " + string(irandom(999999999));
 
 alarm[0] = room_speed * 2;
 

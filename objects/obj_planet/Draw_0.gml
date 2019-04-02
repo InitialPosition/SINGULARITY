@@ -18,8 +18,8 @@ if (hasAntenna) {
 	draw_sprite_ext(spr_planet_antenna, 0, x, y, planetScale, planetScale, 0, planetColor, 1);
 }
 if (hasClouds) {
-	draw_sprite_ext(spr_planet_clouds, 0, x, y, planetScale, planetScale, 0, planetColor, 0.6);
+	draw_sprite_ext(spr_planet_clouds, 0, x, y, planetScale, planetScale, 0, cloudColor, 0.6);
 }
 if (hasRing) {
-	draw_sprite_ext(spr_planet_ring, 0, x, y, planetScale, planetScale, ringAlignment, planetColor, 1);
+	draw_sprite_ext(spr_planet_ring, 0, x, y, planetScale, planetScale, ringAlignment, ringColor, 1);
 }

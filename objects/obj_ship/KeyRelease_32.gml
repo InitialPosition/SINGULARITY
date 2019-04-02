@@ -9,24 +9,7 @@ if (inPlanetProximity) {
 		startedToPress = 0;
 		loopPlaying = 0;
 		
-		with (obj_asteroids) {
-			speed = 0;
-		}
-		
-		with (obj_missile) {
-			savedSpeed = speed;
-			speed = 0;
-		}
-		
-		with (obj_nebula) {
-			savedSpeed = speed;
-			speed = 0;
-		}
-		
-		with (obj_hostileShip) {
-			savedSpeed = speed;
-			speed = 0;
-		}
+		scr_setPauseStatus(true);
 		
 		var nearestPlanet = instance_nearest(x, y, obj_planet);
 		if (!nearestPlanet.visited) {

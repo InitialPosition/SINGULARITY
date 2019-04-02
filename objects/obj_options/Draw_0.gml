@@ -9,8 +9,8 @@ draw_text_color(room_width / 2, 600, option[2], c_white, c_white, c_white, c_whi
 draw_text_color(room_width / 2, 650, option[3], c_white, c_white, c_white, c_white, 1);
 
 draw_set_halign(fa_left);
-draw_text_color(room_width / 2 + 50, 500, loudness[global.musicLvl * 10], c_white, c_white, c_white, c_white, 1);
-draw_text_color(room_width / 2 + 50, 550, loudness[global.sfxLvl * 10], c_white, c_white, c_white, c_white, 1);
+draw_text_color(room_width / 2 + 50, 500, string(round(global.musicLvl * 100)) + "%", c_white, c_white, c_white, c_white, 1);
+draw_text_color(room_width / 2 + 50, 550, string(round(global.sfxLvl * 100)) + "%", c_white, c_white, c_white, c_white, 1);
 if (global.fullscreen) {
 	draw_text_color(room_width / 2 + 50, 600, "ON", c_white, c_white, c_white, c_white, 1);
 } else {

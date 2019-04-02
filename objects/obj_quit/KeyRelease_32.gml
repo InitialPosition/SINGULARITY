@@ -13,4 +13,10 @@ with (obj_ship) {
 	instance_destroy();
 }
 
+with (obj_missile) {
+	if (part_system_exists(missileExhaustPart)) {
+		part_system_destroy(missileExhaustPart);
+	}
+}
+
 room_goto(rm_mainMenu);

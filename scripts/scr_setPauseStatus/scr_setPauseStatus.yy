@@ -1,8 +1,8 @@
 {
-    "id": "d919b5fc-09bd-4e5c-9e96-0446c197ee31",
+    "id": "ce6a15f8-efe1-4c6f-bd3c-f099e6891b94",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_saveStats",
+    "name": "scr_setPauseStatus",
     "IsCompatibility": false,
     "IsDnD": false
 }

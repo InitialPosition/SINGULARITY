@@ -10,7 +10,7 @@ if (global.universesVisited == 1) {
 }
 
 if (global.planetsVisited == 1) {
-	planets = "PLANET";
+	planets = " PLANET";
 } else {
 	planets = " PLANETS";
 }

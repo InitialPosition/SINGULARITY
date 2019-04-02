@@ -2,7 +2,8 @@
 
 if (!global.seedSaved) {
 	randomize()
-	scr_saveSeed(irandom(99999999));
+	var newSeed = global.savedSeed + 1;
+	scr_saveSeed(newSeed);
 }
 
 random_set_seed(global.savedSeed);

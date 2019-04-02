@@ -17,3 +17,8 @@ draw_set_halign(fa_center);
 if (showOOBWarning) {
 	draw_text_color(view_wport[0] / 2, view_hport[0] / 2, "LEAVING SAFE ZONE! TURN AROUND!", c_red, c_red, c_red, c_red, 1);
 }
+
+if (global.inMission) {
+	draw_text_color(view_wport[0] / 2 + 1, 151, "CURRENT OBJECTIVE: SURVIVE", c_orange, c_orange, c_orange, c_orange, 1);
+	draw_text_color(view_wport[0] / 2, 150, "CURRENT OBJECTIVE: SURVIVE", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+}
