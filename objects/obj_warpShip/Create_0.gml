@@ -13,7 +13,7 @@ global.carryPointer = -1;
 global.universesVisited++;
 global.nebulaColorScheme = irandom(255);
 
-if (global.universesVisited > 10) {
+if (global.universesVisited > global.universesTarget) {
 	audio_group_set_gain(audiogroup_default, 0, 1200);
 }
 

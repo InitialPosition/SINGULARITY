@@ -7,7 +7,7 @@ alarm[0] = room_speed * 2;
 
 // final universe in story mode
 if (global.storyMode) {
-	if (global.universesVisited > 10) {
+	if (global.universesVisited > global.universesTarget) {
 		room_goto(rm_finale);
 	}
 }

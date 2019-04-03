@@ -9,6 +9,7 @@ if (instance_exists(target)) {
 }
 
 if (distance_to_object(target) > 1000) {
+	createExplosion = 0;
 	instance_destroy();
 }
 

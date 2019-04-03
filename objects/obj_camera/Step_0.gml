@@ -6,8 +6,8 @@ if (instance_exists(obj_ship)) {
 }
 
 if (instance_exists(obj_warpShip)) {
-	x = lerp(x, obj_warpShip.x, 0.1);
-	y = lerp(y, obj_warpShip.y, 0.1);
+	x = lerp(x, obj_warpShip.x, 0.01);
+	y = lerp(y, obj_warpShip.y, 0.01);
 }
 
 if (instance_exists(obj_shipFinale)) {

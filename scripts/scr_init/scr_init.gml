@@ -15,6 +15,7 @@ global.cargo = 0;
 
 global.planetsVisited = 0;
 global.universesVisited = 0;
+global.universesTarget = 10;
 
 global.inMission = 0;
 

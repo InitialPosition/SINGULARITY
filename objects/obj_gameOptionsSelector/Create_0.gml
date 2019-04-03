@@ -2,8 +2,8 @@
 x = 650;
 y = 618;
 
-selection = 0;
-items = 1;
+selection = 2;
+items = 2;
 
 selected = 0;
 

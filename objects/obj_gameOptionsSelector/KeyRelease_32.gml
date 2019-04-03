@@ -9,7 +9,7 @@ if (!selected) {
 			
 			selected = 0;
 			break;
-		case 1:
+		case 2:
 			var finalSeed = 0;
 			
 			var i;

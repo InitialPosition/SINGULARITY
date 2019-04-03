@@ -10,7 +10,10 @@ if (countdown <= 0) {
 	
 	// time out, spawn black hole
 	if (minutes <= 0 && room == rm_space) {
-		instance_create_layer(irandom_range(1000, room_width - 1000), irandom_range(1000, room_height - 1000), "BlackHole", obj_blackHole);
+		var xx = choose(100, room_width - 100);
+		var yy = choose(100, room_height - 100);
+		instance_create_layer(xx, yy, "BlackHole", obj_blackHole);
+		
 		instance_destroy();
 	}
 	

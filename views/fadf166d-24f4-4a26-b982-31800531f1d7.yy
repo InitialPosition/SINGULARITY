@@ -4,14 +4,14 @@
     "mvc": "1.1",
     "name": "fadf166d-24f4-4a26-b982-31800531f1d7",
     "children": [
-        "9e157f00-360e-4b9c-a3bd-e484673a97aa",
-        "4e6cfb45-1e69-49f7-a579-58fa15b471b4",
-        "a71b5ede-b09d-4409-82bf-bdab5f9cf67a",
-        "8e34ea6c-c79a-4fe5-9443-bbe3fc69abfa",
-        "7de365dd-d568-4918-8590-f5749ea2f388",
-        "4e487012-feda-4f91-8a55-dc27048fb4fb",
-        "6b4fa29e-4893-4b63-a313-778e82bcbaf4",
-        "3b047d86-fc46-4d5b-8c09-ef2e2675ac2b"
+        "a5c346e0-7841-47dd-ab78-93bef17c7f68",
+        "b23e3de8-76bd-4b3c-beee-c40d3524d3d2",
+        "bf90bab2-84af-437b-b484-633a11aba1eb",
+        "4c2efa43-23be-4a6f-aab4-87e4682b2eef",
+        "4881039c-47fa-4c1d-a973-0825a455d0c7",
+        "14abc1da-d090-485e-af11-69b663053e96",
+        "a42eabe9-a5a0-44d1-966a-ba377301f650",
+        "514a5123-6830-4430-8a79-d6d128e11312"
     ],
     "filterType": "GMSprite",
     "folderName": "planets",

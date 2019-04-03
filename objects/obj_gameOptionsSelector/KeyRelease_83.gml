@@ -6,3 +6,9 @@ if (!editMode) {
 		selection = 0;
 	}
 }
+
+if (selection == 1) {
+	if (!global.storyMode) {
+		selection = 2;
+	}
+}

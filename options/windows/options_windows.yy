@@ -17,8 +17,8 @@
     "option_windows_installer_finished": "${base_options_dir}\\windows\\installer\\finished.bmp",
     "option_windows_installer_header": "${base_options_dir}\\windows\\installer\\header.bmp",
     "option_windows_interpolate_pixels": false,
-    "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
-    "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
+    "option_windows_license": "${options_dir}\\windows\\installer\\license.txt",
+    "option_windows_nsis_file": "${options_dir}\\windows\\installer\\nsis_script.nsi",
     "option_windows_product_info": "SINGULARITY",
     "option_windows_resize_window": true,
     "option_windows_save_location": 0,
@@ -31,7 +31,7 @@
     "option_windows_version": {
         "build": 0,
         "major": 0,
-        "minor": 2,
+        "minor": 3,
         "revision": 0
     },
     "option_windows_vsync": false

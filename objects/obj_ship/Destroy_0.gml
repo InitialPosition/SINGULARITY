@@ -1,6 +1,7 @@
 /// @description Destroy instance
 
-with (obj_hazard) {
+with (obj_missile) {
+	createExplosion = 0;
 	instance_destroy();
 }
 
@@ -17,7 +18,7 @@ with (obj_blackHoleTimer) {
 }
 
 with (obj_hostileShip) {
-	instance_destroy();
+	part_system_destroy(missileExhaustPart);
 }
 
 with (obj_missileFriendly) {

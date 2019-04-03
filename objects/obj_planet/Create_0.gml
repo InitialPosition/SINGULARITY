@@ -1,6 +1,15 @@
 /// @description Set up graphics
 
-sprite_index = spr_planet_base;
+sprPlanetBase = choose(spr_planet_base01);
+sprPlanetNoise = choose(spr_planet_noise01);
+sprPlanetBuilding = choose(spr_planet_building01);
+sprPlanetCracks = choose(spr_planet_cracks01);
+sprPlanetCracks2 = choose(spr_planet_crackL01);
+sprPlanetBuilding2 = choose(spr_planet_antenna);
+sprPlanetClouds = choose(spr_planet_clouds01);
+sprPlanetRing = choose(spr_planet_ring01);
+
+sprite_index = spr_planet_base01;
 
 image_xscale = 20;
 image_yscale = 20;

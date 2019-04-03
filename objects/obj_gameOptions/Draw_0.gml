@@ -16,4 +16,11 @@ if (obj_gameOptionsSelector.editMode) {
 		draw_text_color(room_width / 2, 600, option[0] + tempSeed, c_white, c_white, c_white, c_white, 1);
 	}
 }
-draw_text_color(room_width / 2, 650, option[1], c_white, c_white, c_white, c_white, 1);
+
+if (global.storyMode) {
+	draw_text_color(room_width / 2, 650, option[1] + string(global.universesTarget), c_white, c_white, c_white, c_white, 1);
+} else {
+	draw_text_color(room_width / 2, 650, option[1] + string(global.universesTarget), c_gray, c_gray, c_gray, c_gray, 1);
+}
+
+draw_text_color(room_width / 2, 700, option[2], c_white, c_white, c_white, c_white, 1);

@@ -4,9 +4,15 @@ PAUSABLE_OBJECT
 
 // update particle system position
 part_emitter_region(shipExhaustPart, shipExhaustPartEmit, x - lengthdir_x(24, image_angle), x - lengthdir_x(32, image_angle), y - lengthdir_y(24, image_angle), y - lengthdir_y(32, image_angle), ps_shape_rectangle, ps_distr_invgaussian);
+part_emitter_region(shipExhaustPart, shipSmokePartEmit, x - sprite_width / 2, x + sprite_width / 2, y - sprite_height / 2, y + sprite_height / 2, ps_shape_rectangle, ps_distr_invgaussian);
 
 if (keyboard_check(accelerate) && global.fuel > 0) {
-	part_emitter_burst(shipExhaustPart, shipExhaustPartEmit, global.part_ship_exhaust, 2);
+	if (global.fuel > fuelVisualAlert) {
+		part_emitter_burst(shipExhaustPart, shipExhaustPartEmit, global.part_ship_exhaust, 2);
+	} else {
+		part_emitter_burst(shipExhaustPart, shipExhaustPartEmit, global.part_ship_exhaust_lowFuel, 1);
+	}
+	
     if (speed < moveSpeedMax) {
         speed += acceleration;
     } else {
@@ -106,4 +112,9 @@ if (x > room_width + 100 ||
 if (global.hp <= 0) {
 	global.hp = 0;
 	instance_destroy();
+}
+
+// show visual when low on health
+if (global.hp < hpVisualAlert) {
+	part_emitter_burst(shipExhaustPart, shipSmokePartEmit, global.part_ship_smoke, 1);
 }

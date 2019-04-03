@@ -3,7 +3,7 @@
 imgA = 1;
 imgAFade = 0.05;
 
-growthRate = 0.15;
+growthRate = 0.17;
 
 explosionColor = $FFFFFF;
 

@@ -21,6 +21,9 @@ enterPlanet = vk_space;
 startedToPress = 0;
 loopPlaying = 0;
 
+hpVisualAlert = 30;
+fuelVisualAlert = 15;
+
 showOOBWarning = 0;
 inPlanetProximity = 0;
 inWormholeProximity = 0;
@@ -32,8 +35,12 @@ if (instance_exists(obj_missileLauncher)) {
 
 // set up particle system
 shipExhaustPart = part_system_create();
+
 shipExhaustPartEmit = part_emitter_create(shipExhaustPart);
+shipSmokePartEmit = part_emitter_create(shipExhaustPart);
+
 part_emitter_region(shipExhaustPart, shipExhaustPartEmit, x + lengthdir_x(24, image_angle), x + lengthdir_x(32, image_angle), y + lengthdir_y(24, image_angle), y + lengthdir_y(32, image_angle), ps_shape_rectangle, ps_distr_invgaussian);
+part_emitter_region(shipExhaustPart, shipSmokePartEmit, x + lengthdir_x(24, image_angle), x + lengthdir_x(32, image_angle), y + lengthdir_y(24, image_angle), y + lengthdir_y(32, image_angle), ps_shape_rectangle, ps_distr_invgaussian);
 
 // generate camera
 if (!instance_exists(obj_camera)) {
